@@ -1,0 +1,130 @@
+body {
+    /* height: 3000px; */
+    background: linear-gradient(141deg, #0fb8ad 0%, #08346e 51%, #2cb5e8 75%);
+}
+
+.parallax {
+    /* The image used */
+
+
+    /* Set a specific height */
+    /* min-height: 500px;  */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.cut {
+    background-color: black;
+    color: white;
+    font-size: 10vw;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+}
+
+#bg-image {
+    height: 100vh;
+}
+
+#modal-search:focus {
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
+
+#b {
+    display: none;
+
+}
+
+#img-cont:hover+#b {
+    /* margin-top: -120px; */
+    transition-delay: 0.3s;
+    display: block;
+    margin-top: -40px;
+}
+
+/* .img-content{
+    display: none;
+  } */
+.m-color {
+    background-color: #293546;
+    color: aliceblue;
+}
+
+.m-selected-color {
+    background-color: #0385C7;
+    color: aliceblue;
+}
